@@ -27,7 +27,7 @@ export default function Home() {
         const newIndex = Number.isInteger(prevIndex) ? prevIndex + 1 : 0;
         return newIndex % sentences.length;
       });
-    }, 5000);
+    }, 10000);
 
     return () => clearTimeout(timeout);
   }, [index, sentences]);
